@@ -29,7 +29,6 @@ tmp/**/*
 
 .zeus.sock
 
-config/heroku_env.rb
 
 
 # uploads
@@ -57,5 +56,6 @@ public/stylesheets/cache
 .ruby-gemset
 .ruby-version
 
-heroko_env.erb
-config/initializers/ssl_patch_for_development.rb
+# config/heroku_env.rb
+# heroko_env.erb
+# config/initializers/ssl_patch_for_development.rb

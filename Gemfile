@@ -1,10 +1,14 @@
 source 'https://rubygems.org'
 
+ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0.beta2'
 
-gem 'sqlite3', group: :development
+group :production do 
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
@@ -26,6 +30,15 @@ gem 'sdoc',          group: :doc, require: false
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
+gem 'foundation-rails'
+
+gem 'ngmin-rails'
+
+gem "non-stupid-digest-assets"
+
+gem 'thin'
+
+gem "twitter-bootstrap-rails"
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -35,3 +48,22 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :test, :development do 
+  gem 'sqlite3'
+	gem 'rspec-rails', git: 'git@github.com:rspec/rspec-rails.git'
+end
+
+group :test do
+  # gem 'rspec-rails' #, git: 'git@github.com:rspec/rspec-rails.git'
+  gem 'shoulda-matchers'
+  gem 'capybara', '>=2.2.0'
+  gem "capybara-webkit"
+  gem 'factory_girl_rails'
+  gem "database_cleaner" #, '1.0.0.RC1'
+  gem 'timecop'
+end
+
+group :development do 
+  gem 'annotate', ">=2.5.0"
+  gem 'faker'
+end
