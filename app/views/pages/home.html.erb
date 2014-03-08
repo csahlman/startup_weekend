@@ -1,0 +1,19 @@
+<%= form_tag login_path, method: :post do %>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="session[email]">Email</label>
+        <input type="email" name="session[email]" class="form-control" placeholder="Email address" required="" autofocus="" id="email">
+        <label for="session[password]">Password</label>
+        <input type="password" name="session[password]" class="form-control" placeholder="Password" required="" id="password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+
+<% end %>

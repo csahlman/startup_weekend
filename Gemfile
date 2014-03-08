@@ -38,7 +38,7 @@ gem "non-stupid-digest-assets"
 
 gem 'thin'
 
-gem "twitter-bootstrap-rails"
+# gem "twitter-bootstrap-rails"
 # Use unicorn as the app server
 # gem 'unicorn'
 
