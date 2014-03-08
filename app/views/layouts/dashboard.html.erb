@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="fantasy_sports_dashboard">
 <head>
   <title>Dashboard</title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= stylesheet_link_tag    "dashboard", media: "all" %>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-animate.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-cookies.min.js"></script>
 
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "dashboard" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-controller="AppCtrl">
 
-  <%= yield %>
-  <ng:view></ng:view>
+<div class="container">
+  <div class="row">
+    <%= yield %>
+    <ng:view></ng:view>
+  </div>
+</div>
 
 </body>
 </html>
