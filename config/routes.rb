@@ -6,8 +6,8 @@ Rails.application.routes.draw do
     delete 'logout' => :destroy
   end
 
-  namespace :dashboard do 
-    root to: 'pages#dashboard'
+  namespace :movers do 
+    root to: 'dashboard#show'
   end
 
 end
