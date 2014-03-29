@@ -32,7 +32,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 gem "jquery-rails"
 
-gem "non-stupid-digest-assets"
+# gem "non-stupid-digest-assets"
 
 gem 'thin'
 
