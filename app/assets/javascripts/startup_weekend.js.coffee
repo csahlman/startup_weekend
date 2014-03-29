@@ -10,10 +10,10 @@ angular.module('startup_weekend').config ($httpProvider) ->
       utf8_data = angular.toJson(d)
     utf8_data
 
-angular.module('startup_weekend').config(($routeProvider) ->
-  $routeProvider.when('/',
-    controller: 'LineUpsCtrl'
-    templateUrl: "/assets/pages/lineups.tpl.html"
-  )).run(($rootScope, $location) ->
+# angular.module('startup_weekend').config(($routeProvider) ->
+#   $routeProvider.when('/',
+#     controller: 'LineUpsCtrl'
+#     templateUrl: "/assets/pages/lineups.tpl.html"
+#   )).run(($rootScope, $location) ->
     
-  )
+#   )

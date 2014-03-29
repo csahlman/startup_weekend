@@ -1,19 +1,382 @@
-<%= form_tag login_path, method: :post do %>
-  <div class="row">
-    <div class="col-xs-6 col-xs-offset-3">
-      <form class="form-signin" role="form">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="session[email]">Email</label>
-        <input type="email" name="session[email]" class="form-control" placeholder="Email address" required="" autofocus="" id="email">
-        <label for="session[password]">Password</label>
-        <input type="password" name="session[password]" class="form-control" placeholder="Password" required="" id="password">
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
-      </form>
+<div id="over">
+  <div id="out_container">
+    <!-- THE LINE AT THE VERY TOP OF THE PAGE -->
+    <div class="top_line"></div>
+    <!-- HEADER AREA -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <!-- HEADER: LOGO AREA -->
+          <div class="col-sm-4 col-md-4 logo"> <a class="logo" href="index.html">
+            <img alt="logo" title="bizstrap" src="/assets/logo.png" class="img-responsive" />
+            </a>
+          </div>
+          <div class="col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+            <!-- HEADER: PHONE NUMBER -->
+            <p class="head_phone"><a href="tel:555-555-5555">(800) 655-7800</a>
+            </p>
+          </div>
+          <!-- HEADER: SOCIAL ICONS -->
+          <ul class="socials unstyled">
+            <li><a class="flickr" href="#"></a>
+            </li>
+            <li><a class="twitter" href="#"></a>
+            </li>
+            <li><a class="facebook" href="#"></a>
+            </li>
+            <li><a class="youtube" href="#"></a>
+            </li>
+            <li><a class="dribbble" href="#"></a>
+            </li>
+            <li><a class="pinterest" href="#"></a>
+            </li>
+            <li><a class="linkedin" href="#"></a>
+            </li>
+            <li><a class="google_plus" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- HEADER: PRIMARY SITE NAVIGATION -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="navbar navbar-default">
+              <div class="navbar-header"></div>
+              <div class="buttons-container"></div>
+              <div class="navbar-collapse">
+                <ul class="nav nav-pills navbar-nav">
+                  <li class="active dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu">HOME
+                    <i>bizstrap home</i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index.html">Homepage 1</a>
+                      </li>
+                      <li><a href="index_2.html">Homepage 2</a>
+                      </li>
+                      <li class="active"><a href="index_3.html">Homepage 3</a>
+                      </li>
+                      <li><a href="index_4.html">Homepage 4</a>
+                      </li>
+                      <li><a href="index_5.html">Homepage 5</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+                    FEATURES<i>awesome features</i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="stickies.html">Sticky Notes</a>
+                      </li>
+                      <li><a href="columns.html">Columns</a>
+                      </li>
+                      <li><a href="dividers.html">Dividers</a>
+                      </li>
+                      <li><a href="frames.html">Frames</a>
+                      </li>
+                      <li><a href="google_maps.html">Google Maps</a>
+                      </li>
+                      <li><a href="icons_and_buttons.html">Icons and Buttons</a>
+                      </li>
+                      <li><a href="lists.html">Lists</a>
+                      </li>
+                      <li><a href="message_boxes.html">Message Boxes</a>
+                      </li>
+                      <li><a href="navigation.html">Navigation</a>
+                      </li>
+                      <li><a href="price_tables.html">Price Tables</a>
+                      </li>
+                      <li><a href="quotes.html">Quotes</a>
+                      </li>
+                      <li><a href="sliders_and_videos.html">Sliders and Videos</a>
+                      </li>
+                      <li><a href="tables.html">Tables</a>
+                      </li>
+                      <li><a href="tabs_and_collapses.html">Tabs and Collapses</a>
+                      </li>
+                      <li><a href="typography.html">Typography</a>
+                      </li>
+                      <li><a href="thumbnails.html">Thumbnails</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2">
+                    PAGES<i>rapid design templates</i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="3_columns_about.html">About Us (both sidebars)</a>
+                      </li>
+                      <li><a href="left_column_about.html">About Us (left sidebar)</a>
+                      </li>
+                      <li><a href="right_column_about.html">About Us (right sidebar)</a>
+                      </li>
+                      <li><a href="gallery.html">Gallery</a>
+                      </li>
+                      <li><a href="our_team_one_col.html">Our Team</a>
+                      </li>
+                      <li><a href="our_team.html">Our Team (Large blocks)</a>
+                      </li>
+                      <li><a href="philosophy.html">Philosophy</a>
+                      </li>
+                      <li><a href="coming_soon.html">Coming Soon Page</a>
+                      </li>
+                      <li><a href="faqs.html">FAQs</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu3">
+                    PORTFOLIO<i>showcase your work</i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="portfolio.html">Portfolio</a>
+                      </li>
+                      <li><a href="portfolio_grid.html">Portfolio Grid</a>
+                      </li>
+                      <li><a href="portfolio_item.html">Portfolio Item</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu4">
+                    BLOG<i>express yourself</i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog_3_columns.html">Blog (both sidebars)</a>
+                      </li>
+                      <li><a href="blog_left_column.html">Blog (left sidebar)</a>
+                      </li>
+                      <li><a href="blog_right_column.html">Blog (right sidebar)</a>
+                      </li>
+                      <li><a href="blog_3_columns_post.html">Post (both sidebars)</a>
+                      </li>
+                      <li><a href="blog_left_column_post.html">Post (left sidebar)</a>
+                      </li>
+                      <li><a href="blog_right_column_post.html">Post (right sidebar)</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="single"><a href="contact_us.html">CONTACT
+                    <i>get in touch</i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN CONTENT AREA -->
+    <div class="main-content">
+      <div class="container">
+        <div class="row main-block">
+          <div class="col-sm-12 col-md-12">
+            <!-- MAIN CONTENT AREA: REDESIGN CUSTOM - HERO LIST -->
+            <div class="row show-grid hero-list features-list">
+              <div class="col-sm-3 col-md-3">
+                <div class="image-wrapper">
+                  <img alt="" src="/assets/home_grid.png" class="img-responsive" />
+                </div>
+                <h2>Clean Design</h2>
+                <p>Modern, clean design to give your business a highly professional appearance.
+                  <a
+                    href="#">Learn more&nbsp;&raquo;</a>
+                </p>
+              </div>
+              <div class="col-sm-3 col-md-3">
+                <div class="image-wrapper">
+                  <img alt="" src="/assets/home_gears.png" class="img-responsive" />
+                </div>
+                <h2>Flexible Layout</h2>
+                <p>Flexible page layout templates to help you quickly organize your website's
+                  content. <a href="#">Learn more&nbsp;&raquo;</a>
+                </p>
+              </div>
+              <div class="col-sm-3 col-md-3">
+                <div class="image-wrapper">
+                  <img alt="" src="/assets/home_arrow.png" class="img-responsive" />
+                </div>
+                <h2>Quick Shortcuts</h2>
+                <p>Dozens of unique shortcuts to add your own cool and custom flare and personal
+                  style. <a href="#">Learn more&nbsp;&raquo;</a>
+                </p>
+              </div>
+              <div class="col-sm-3 col-md-3">
+                <div class="image-wrapper">
+                  <img alt="" src="/assets/home_arrows.png" class="img-responsive" />
+                </div>
+                <h2>Responsive Action</h2>
+                <p>Ultra-responsive action so your pages work beautifully on practically
+                  any device. <a href="#">Learn more&nbsp;&raquo;</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FREE TRIAL PROMO BOX -->
+        <div class="jumbotron dark-hero">
+          <h1>
+          <span>Signup</span> for a <span>Free Trial</span> Now/h1>
+          <ul class="unstyled">
+            <li>Easy, no-hassle sign-up</li>
+            <li>|</li>
+            <li>Free 30-day trial</li>
+            <li>|</li>
+            <li>Pricing starts at just $27/year after trial period</li>
+          </ul>
+          <a class="btn btn-lg btn-primary">Sign Up</a>
+        </div>
+        <div class="row show-grid features-block">
+          <div class="col-sm-6 col-md-6">
+            <h2>Very powerful options built right in</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            </p>
+            <ul class="unstyled left-list">
+              <li><i class="icon-ok icon-large"></i>Quick shortcuts</li>
+              <li><i class="icon-ok icon-large"></i>Clean design</li>
+              <li><i class="icon-ok icon-large"></i>Responsive action</li>
+            </ul>
+            <ul class="unstyled">
+              <li><i class="icon-ok icon-large"></i>Contact form</li>
+              <li><i class="icon-ok icon-large"></i>Twitter widget</li>
+              <li><i class="icon-ok icon-large"></i>Flexible layout</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <h2>What people are saying...</h2>
+            <blockquote class="blueb">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <p>Sed sem felis, tincidunt at adipiscing ac, dapibus in dui. In accumsan
+                adipiscing arcu ut convallis.
+              </p>
+              <small class="blueb-author"><strong>James Thompson</strong> - QueStart Technologies, Inc.</small>
+            </blockquote>
+          </div>
+          <a class="more" href="">Learn more&nbsp;&raquo;</a>
+        </div>
+        <!-- MAIN CONTENT AREA: REDESIGN CUSTOM - CLIENTS LOGO BAR -->
+        <div class="main-block clients">
+          <div class="line_title">
+            <h2><a href="#">A few of our awesome clients</a></h2>
+          </div>
+          <div class="row show-grid">
+            <div class="col-sm-12 col-md-12">
+              <div id="clients" class="row show-grid">
+                <div class="col-sm-3 col-md-3 clear-both hp-wrapper">
+                  <img alt="" src="/assets/client_001.png" height="79" class="img-responsive"
+                    />
+                </div>
+                <div class="col-sm-3 col-md-3 hp-wrapper">
+                  <img alt="" src="/assets/client_002.png" height="79" class="img-responsive"
+                    />
+                </div>
+                <div class="col-sm-3 col-md-3 hp-wrapper">
+                  <img alt="" src="/assets/client_003.png" height="79" class="img-responsive"
+                    />
+                </div>
+                <div class="col-sm-3 col-md-3 hp-wrapper">
+                  <img alt="" src="/assets/client_004.png" height="79" class="img-responsive"
+                    />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN CONTENT AREA: bizstrap CUSTOM - RECENT TWEETS BAR -->
+      <div class="recent-tweets">
+        <div class="container">
+          <div class="row show-grid">
+            <div class="col-sm-12 col-md-12 twitter-wrapper">
+              <div id="nav_t"></div>
+              <div class="tweets-slide">
+                <ul class="slides"></ul>
+              </div>
+              <a class="follow_img" href="#"><img alt="" src="/assets/follow.png" class="img-responsive" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- FOOTER STARTS HERE -->
+    <footer id="footer">
+      <div class="footer-top"></div>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row show-grid">
+            <div class="col-sm-12 col-sm-12 col-md-12">
+              <div class="row show-grid">
+                <!-- FOOTER: LOGO -->
+                <div class="col-sm-4 col-md-4">
+                  <img alt="" class="footer-logo img-responsive" src="/assets/grey_logo.png"
+                    />
+                  <!-- FOOTER: ADDRESS --> 
+                  <address class="address">
+                    <p><i class="icon-map-marker icon-large"></i>1800 North Central Expressway</p>
+                    <p><i>&nbsp;</i>Suite 800</p>
+                    <p><i>&nbsp;</i>Dallas, Texas 75231</p>
+                    <p><i class="icon-phone icon-large"></i>Phone: (800) 655-7800</p>
+                    <p><i class="icon-print icon-large"></i>Fax: (800) 655-7800</p>
+                  </address>
+                </div>
+                <!-- FOOTER: ABOUT US -->
+                <div class="col-sm-4 col-md-4 footer-center">
+                  <h4 class="center-title">About Us</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero
+                    magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque
+                    viverra vehicula sem ut volutpat.
+                  </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero
+                    magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque
+                    viverra vehicula sem ut volutpat.
+                  </p>
+                </div>
+                <!-- FOOTER: NAVIGATION LINKS -->
+                <div class="col-sm-4 col-md-4 footer-right">
+                  <h4 class="center-title">Navigate</h4>
+                  <ul class="footer-navigate">
+                    <li> <a href="">Home</a>
+                    </li>
+                    <li> <a href="">Features</a>
+                    </li>
+                    <li> <a href="">Pages</a>
+                    </li>
+                    <li> <a href="">Portfolio</a>
+                    </li>
+                    <li> <a href="">Blog</a>
+                    </li>
+                    <li> <a href="">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row show-grid">
+            <!-- FOOTER: COPYRIGHT TEXT -->
+            <div class="col-sm-12 col-md-12">
+              <p>bizstrap Corporate HTML Template by <a href="http://www.themeleaf.com">ThemeLeaf</a>.
+                Copyright 2012.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
   </div>
-
-
-<% end %>
+</div>
