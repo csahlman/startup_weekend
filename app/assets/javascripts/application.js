@@ -10,3 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require vendor/promise_tracker
+//= require vendor/angular-bootstrap
+//= require fantasy_sports_dashboard
+//= require_tree ./controllers

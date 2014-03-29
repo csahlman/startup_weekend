@@ -1,7 +1,7 @@
-angular.module('fantasy_sports_dashboard', ['ngRoute', 'ngAnimate', 'ngCookies',
+angular.module('startup_weekend', ['ngRoute', 'ngAnimate', 'ngCookies',
   'ajoslin.promise-tracker', 'ui.bootstrap'])
 
-angular.module('fantasy_sports_dashboard').config ($httpProvider) ->
+angular.module('startup_weekend').config ($httpProvider) ->
   $httpProvider.defaults.transformRequest.push (data, headersGetter) ->
     utf8_data = data
     unless angular.isUndefined(data)
@@ -10,7 +10,7 @@ angular.module('fantasy_sports_dashboard').config ($httpProvider) ->
       utf8_data = angular.toJson(d)
     utf8_data
 
-angular.module('fantasy_sports_dashboard').config(($routeProvider) ->
+angular.module('startup_weekend').config(($routeProvider) ->
   $routeProvider.when('/',
     controller: 'LineUpsCtrl'
     templateUrl: "/assets/pages/lineups.tpl.html"
