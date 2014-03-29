@@ -7,14 +7,10 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="http://alvarez.is/demo/dashio/favicon.png">
-    <title>DASHIO - Bootstrap Admin + Front-End template</title>
+    <title>Move Oomph!</title>
+    <link href='http://fonts.googleapis.com/css?family=Ruda' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    "movers", media: "all" %>
-    <script src="assets/js/chart-master/Chart.js"></script>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <%= javascript_tag "movers" %>
   </head>
   <body>
     <section id="container" >
@@ -567,19 +563,7 @@
                       <h5>DISK SPACE</h5>
                     </div>
                     <canvas id="serverstatus03" height="120" width="120"></canvas>
-                    <script>
-                      var doughnutData = [
-                          {
-                            value: 60,
-                            color:"#2b2b2b"
-                          },
-                          {
-                            value : 40,
-                            color : "#fffffd"
-                          }
-                        ];
-                        var myDoughnut = new Chart(document.getElementById("serverstatus03").getContext("2d")).Doughnut(doughnutData);
-                    </script>
+
                     <h3>60% USED</h3>
                   </div>
                 </div>
@@ -596,19 +580,6 @@
               <div class="donut-main">
                 <h4>COMPLETED ACTIONS & PROGRESS</h4>
                 <canvas id="newchart" height="130" width="130"></canvas>
-                <script>
-                  var doughnutData = [
-                      {
-                        value: 70,
-                        color:"#4ECDC4"
-                      },
-                      {
-                        value : 30,
-                        color : "#fdfdfd"
-                      }
-                    ];
-                    var myDoughnut = new Chart(document.getElementById("newchart").getContext("2d")).Doughnut(doughnutData);
-                </script>
               </div>
               <!--NEW EARNING STATS -->
               <div class="panel terques-chart">
