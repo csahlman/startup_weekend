@@ -30,9 +30,7 @@ gem 'sdoc',          group: :doc, require: false
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-gem 'foundation-rails'
-
-gem 'ngmin-rails'
+gem "jquery-rails"
 
 gem "non-stupid-digest-assets"
 

@@ -138,3 +138,7 @@ body {
 		padding-right: 15px;
 	}
 }
+
+input {
+	width: 200px;
+}

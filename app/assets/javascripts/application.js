@@ -10,7 +10,5 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-// require vendor/promise_tracker
-// require vendor/angular-bootstrap
-// require startup_weekend
-// require_tree ./controllers
+//= require jquery
+//= require jquery_ujs
