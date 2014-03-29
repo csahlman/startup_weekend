@@ -12,5 +12,6 @@
 //
 //= require vendor/promise_tracker
 //= require vendor/angular-bootstrap
+//= require vendor/ui-calendar
 //= require app
 //= require_tree ./controllers

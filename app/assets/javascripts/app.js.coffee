@@ -1,5 +1,5 @@
 angular.module('moveoomph', ['ngRoute', 'ngAnimate', 'ngCookies',
-  'ajoslin.promise-tracker', 'ui.bootstrap'])
+  'ajoslin.promise-tracker', 'ui.bootstrap', 'ui.calendar'])
 
 angular.module('moveoomph').config ($httpProvider) ->
   $httpProvider.defaults.transformRequest.push (data, headersGetter) ->
@@ -14,6 +14,8 @@ angular.module('moveoomph').config(($routeProvider) ->
   $routeProvider.when('/',
     controller: 'PagesCtrl'
     templateUrl: "/assets/pages/home.tpl.html"
+  ).when(
+
   )).run(($rootScope, $location) ->
     
   )
