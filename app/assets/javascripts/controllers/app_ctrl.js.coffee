@@ -1,2 +1,2 @@
-angular.module('fantasy_sports_dashboard').controller 'AppCtrl', ($scope, $http) ->
+angular.module('moveoomph').controller 'AppCtrl', ($scope, $http) ->
 

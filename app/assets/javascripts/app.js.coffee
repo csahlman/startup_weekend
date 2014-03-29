@@ -1,7 +1,7 @@
-angular.module('startup_weekend', ['ngRoute', 'ngAnimate', 'ngCookies',
+angular.module('moveoomph', ['ngRoute', 'ngAnimate', 'ngCookies',
   'ajoslin.promise-tracker', 'ui.bootstrap'])
 
-angular.module('startup_weekend').config ($httpProvider) ->
+angular.module('moveoomph').config ($httpProvider) ->
   $httpProvider.defaults.transformRequest.push (data, headersGetter) ->
     utf8_data = data
     unless angular.isUndefined(data)
@@ -10,10 +10,10 @@ angular.module('startup_weekend').config ($httpProvider) ->
       utf8_data = angular.toJson(d)
     utf8_data
 
-# angular.module('startup_weekend').config(($routeProvider) ->
-#   $routeProvider.when('/',
-#     controller: 'LineUpsCtrl'
-#     templateUrl: "/assets/pages/lineups.tpl.html"
-#   )).run(($rootScope, $location) ->
+angular.module('moveoomph').config(($routeProvider) ->
+  $routeProvider.when('/',
+    controller: 'PagesCtrl'
+    templateUrl: "/assets/pages/home.tpl.html"
+  )).run(($rootScope, $location) ->
     
-#   )
+  )
