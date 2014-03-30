@@ -5065,7 +5065,6 @@ button.close {
   margin-top: 0;
   top: 50%;
   overflow: visible; /* allow content to popup out (i.e tooltips) */
-  */
   position: absolute;
   outline: none;
   overflow: visible;
