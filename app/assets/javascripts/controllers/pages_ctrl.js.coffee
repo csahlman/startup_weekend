@@ -4,6 +4,7 @@ angular.module('moveoomph').controller 'PagesCtrl', ($scope, $http, $timeout, $i
   $scope.inquirySubmitted = false
   $scope.loading = false
   $scope.progress = 0
+  $scope.deals = []
 
 
   $scope.getEstimate = ->
@@ -13,11 +14,14 @@ angular.module('moveoomph').controller 'PagesCtrl', ($scope, $http, $timeout, $i
       data: $scope.inquiry
     .success (data) ->
       progressGrower = $interval ->
-        $scope.progress += 2
-      , 35
+        $scope.progress += 11
+      , 100
       $scope.inquirySubmitted = true
       $scope.loading = true
       $timeout -> 
         $scope.loading = false
         $interval.cancel progressGrower
-      , 3000
+        $timeout ->
+          $scope.deals = [1,2,3,4,5,6]
+        , 200
+      , 1500

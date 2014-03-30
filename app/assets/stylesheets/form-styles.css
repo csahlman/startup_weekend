@@ -21,6 +21,8 @@ background-size: cover;
 .pricing-tables-jumbotron {
 	text-align: center;
 	background: none;
+	color: #fff;
+	text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
 
 .pricing-tables-jumbotron>h1, .pricing-tables-jumbotron>h2 {
@@ -33,6 +35,10 @@ background-size: cover;
 	padding: 20px;
 	margin: 20px 0;
 	text-align: center;
+}
+
+.plan-with-form {
+	background-color: rgba(255, 255, 255, 0.88);
 }
 
 .plan>.plan-title>h3, .plan>.plan-price>h3, .plan>.plan-price>h4 {
@@ -147,6 +153,55 @@ background-size: cover;
 	}
 }
 
-input {
-	width: 200px;
+.animate-enter {
+    -webkit-transition: 1s linear all; /* Chrome */
+    transition: 1s linear all;
+    opacity: 0;
+}
+
+
+
+.animate-enter.animate-enter-active {
+    opacity: 1;
+}
+
+.repeat-animation.ng-enter-stagger {
+  /* 200ms will be applied between each sucessive enter operation */ 
+  -webkit-transition-delay:0.2s;
+  transition-delay:0.2s;
+
+  /* this is here to avoid accidental CSS inheritance */
+  -webkit-transition-duration:0;
+  transition-duration:0;
+}
+.repeat-animation.ng-enter-stagger,
+.repeat-animation.ng-leave-stagger,
+.repeat-animation.ng-move-stagger {
+  /* 200ms will be applied between each sucessive enter operation */ 
+  -webkit-transition-delay:0.2s;
+  transition-delay:0.2s;
+}
+
+.repeat-animation.ng-enter,
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+}
+
+.repeat-animation.ng-leave.ng-leave-active,
+.repeat-animation.ng-enter,
+.repeat-animation.ng-move {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+
+  opacity:0;
+  line-height:0;
+}
+
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move.ng-move-active,
+.repeat-animation.ng-enter.ng-enter-active {
+  opacity:1;
+  line-height:20px;
 }

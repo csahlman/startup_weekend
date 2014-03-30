@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container" ng-hide="!loading && inquirySubmitted">
   <div class="jumbotron pricing-tables-jumbotron">
     <h1>Compare Local Movers in Denver</h1>
     <h2>Get Prices Immediately</h2>
   </div>
   <div class="row attached">
     <div class="col-xs-12">
-      <div class="plan">
+      <div class="plan plan-with-form">
         <div class="plan-title" id="form_body" style="margin-top: 30px; height: 300px;">
           <form name="inquiryForm" ng-hide="inquirySubmitted">
             <div class="form-group" style="padding: 30px;">
@@ -36,22 +36,19 @@
             <h2>Loading Your Deals</h2>
             <progressbar class="progress-striped active" value="progress"></progressbar>
           </div>
-          <div ng-show="inquirySubmitted && !loading">
-          <h3>Done loading</h3>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container" ng-if="!loading && inquirySubmitted">
 
   <div class="jumbotron pricing-tables-jumbotron">
-      <h2>Attached 4 col</h2>
+      <h1>Moving from Boulder to Denver: 6 Deals Found</h1>
   </div>
 
   <div class="row attached">
-    <div class="col-sm-3 col-md-3">
+    <div class="col-sm-3 col-md-3 repeat-animation" ng-repeat="deal in deals">
       <div class="plan">
         <div class="plan-title">
           <h3>Starter</h3>
@@ -68,95 +65,11 @@
             </div>
           </div>
           <ul class="item-list">
-                      <li><strong>5GB</strong> Disk Space</li>
-                      <li><strong>15</strong> Email Addresses</li>
-                      <li><strong>5</strong> Domains </li>
-                      <li><strong>50</strong> Subdomains</li>
-                      <li><strong>Email</strong> Support</li>
-                  </ul>
-                  <button type="button" class="btn btn-success">Sign Up</button>
-                </div>
-      </div>
-    </div>
-
-    <div class="col-sm-3 col-md-3">
-      <div class="plan most-popular">
-        <div class="plan-title">
-          <h3>Value</h3>
-          <span>most popular plan</span>
-        </div>
-        <div class="plan-price">
-          <h3><span class="symbol">$</span>50</h3>
-          <h4>per month</h4>
-        </div>
-        <div class="plan-list">
-          <div class="divide">
-            <div class="icon">
-              <i class="fa fa-plane fa-3x"></i>
-            </div>
-          </div>
-          <ul class="item-list">
-            <li><strong>20GB</strong> Disk Space</li>
-            <li><strong>25</strong> Email Addresses</li>
-            <li><strong>10</strong> Domains</li>
-            <li><strong>80</strong> Subdomains</li>
-            <li><strong>Chat</strong> Support</li>
-          </ul>
-          <button type="button" class="btn btn-success">Sign Up</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-3 col-md-3">
-      <div class="plan">
-        <div class="plan-title">
-          <h3>Pro</h3>
-          <span>best bet for any  freelancer</span>
-        </div>
-        <div class="plan-price">
-          <h3><span class="symbol">$</span>75</h3>
-          <h4>per month</h4>
-        </div>
-        <div class="plan-list">
-          <div class="divide">
-            <div class="icon">
-              <i class="fa fa-rocket fa-3x"></i>
-            </div>
-          </div>
-          <ul class="item-list">
-            <li><strong>40GB</strong> Disk Space</li>
-            <li><strong>35</strong> Email Addresses</li>
-            <li><strong>15</strong> Domains</li>
-            <li><strong>100</strong> Subdomains</li>
-            <li><strong>Phone</strong> Support</li>
-          </ul>
-          <button type="button" class="btn btn-success">Sign Up</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-3 col-md-3">
-      <div class="plan">
-        <div class="plan-title">
-          <h3>Full</h3>
-          <span>Best plan</span>
-        </div>
-        <div class="plan-price">
-          <h3><span class="symbol">$</span>99</h3>
-          <h4>per month</h4>
-        </div>
-        <div class="plan-list">
-          <div class="divide">
-            <div class="icon">
-              <i class="fa fa-rocket fa-3x"></i>
-            </div>
-          </div>
-          <ul class="item-list">
-            <li><strong>60GB</strong> Disk Space</li>
-            <li><strong>75</strong> Email Addresses</li>
-            <li><strong>25</strong> Domains</li>
-            <li><strong>200</strong> Subdomains</li>
-            <li><strong>Phone</strong> Support</li>
+              <li><strong>5GB</strong> Disk Space</li>
+              <li><strong>15</strong> Email Addresses</li>
+              <li><strong>5</strong> Domains </li>
+              <li><strong>50</strong> Subdomains</li>
+              <li><strong>Email</strong> Support</li>
           </ul>
           <button type="button" class="btn btn-success">Sign Up</button>
         </div>
