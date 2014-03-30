@@ -1,4 +1,4 @@
-angular.module('moveoomph', ['ngRoute', 'ngAnimate', 'ngCookies',
+angular.module('moveoomph', ['ngRoute', 'ngAnimate',
   'ajoslin.promise-tracker', 'ui.bootstrap'])
 
 angular.module('moveoomph').config ($httpProvider) ->
