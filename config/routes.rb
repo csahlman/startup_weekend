@@ -10,6 +10,6 @@ Rails.application.routes.draw do
     root to: 'dashboard#show'
   end
 
-  resources :inquiries, only: [ :create ]
+  resources :inquiries, only: [ :create ], defaults: { format: :json }
 
 end

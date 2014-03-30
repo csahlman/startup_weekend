@@ -4,9 +4,7 @@ class InquiriesController < ApplicationController
     @inquiry = Inquiry.new inquiry_params
     @inquiry.ip_address = request.remote_ip
     @inquiry.save!
-    respond_to do |f|
-      f.js { }
-    end
+    render json: {}
   end
 
 
