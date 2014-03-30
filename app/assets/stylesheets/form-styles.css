@@ -207,7 +207,7 @@ background-size: cover;
 }
 
 .mover-plan {
-  height: 130px;
+  height: 100px;
 }
 
 .item-list {
@@ -223,4 +223,18 @@ background-size: cover;
   right: 10%;
   width: auto;
   height: 90%;
+}
+
+.moving-modal {
+  height: 500px;
+  background: url('/assets/moving-truck.gif') no-repeat 85% 60%;
+}
+
+.modal-dialog {
+  position: relative;
+  height: 100%;
+}
+
+.description {
+  text-shadow: 0.5px 0 0 #fff, 0 -0.5px 0 #fff, 0 0.5px 0 #fff, -0.5px 0 0 #fff;
 }

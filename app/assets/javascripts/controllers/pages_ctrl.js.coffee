@@ -28,7 +28,7 @@ angular.module('moveoomph').controller 'PagesCtrl', ($scope, $http, $timeout, $i
   deals = [
     {
       name: 'Paul Hauls', price: '555', moveDuration: '6', ourThoughts: 'The best!, Paul can really haul', reviews: [
-        { rating: 5, description: "Had an A+ moving experience, thanks so much!" }
+        { name: "Captain Awesomesauce", rating: 5, description: "Had an A+ moving experience, thanks so much!" }
       ]
     },
     {
