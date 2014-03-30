@@ -13,6 +13,8 @@ angular.module('moveoomph').controller 'ModalInstanceCtrl', ($scope, $modalInsta
 
   $scope.selectedDeal.averageRating = $scope.getAverage($scope.selectedDeal.reviews, 'rating')
 
+  $scope.cancel = ->
+    $modalInstance.dismiss 'cancel'
 
 angular.module('moveoomph').controller 'PagesCtrl', ($scope, $http, $timeout, $interval, $modal) ->
 

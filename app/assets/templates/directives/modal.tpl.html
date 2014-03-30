@@ -12,15 +12,17 @@
         <h3>Your Move on {{inquiry.date}}</h3>
         <h4>{{selectedDeal.price | currency}}</h4>
         <h5>{{selectedDeal.moveDuration}} Hours.</h5>
-        <div class="reviews">
-          <h6>Reviews</h6>
-          <rating value="selectedDeal.averageRating" max="maxRating" readonly="isReadonly"></rating>
+        <div class="reviews" ng-show="selectedDeal.reviews.length > 0">
+          <h6>Reviews <rating value="selectedDeal.averageRating" max="maxRating" readonly="isReadonly"></rating></h6>
           <ul>
             <li ng-repeat="review in selectedDeal.reviews">
               <rating value="review.rating" max="maxRating" readonly="isReadonly"></rating> <br>
               {{review.description}}
             </li>
           </ul>
+        </div>
+        <div ng-show="selectedDeal.reviews.length == 0">
+        <h6>No Reviews</h6>
         </div>
       </div>
     </div>
