@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <div class="modal-header">
+          <h3>{{selectedDeal.name}}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="modal-body">
+        <h3>Your Move on {{inquiry.date}}</h3>
+        <h4>{{selectedDeal.price | currency}}</h4>
+        <h5>{{selectedDeal.moveDuration}} Hours.</h5>
+        <div class="reviews">
+          <h6>Reviews</h6>
+          <rating value="selectedDeal.averageRating" max="maxRating" readonly="isReadonly"></rating>
+          <ul>
+            <li ng-repeat="review in selectedDeal.reviews">
+              <rating value="review.rating" max="maxRating" readonly="isReadonly"></rating> <br>
+              {{review.description}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-8">
+      <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="bookMove(selectedDeal)">Book Move!</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

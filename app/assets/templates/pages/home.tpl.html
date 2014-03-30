@@ -50,13 +50,12 @@
   <div class="row attached">
     <div class="col-sm-3 col-md-3 repeat-animation" ng-repeat="deal in deals">
       <div class="plan">
-        <div class="plan-title">
-          <h3>Starter</h3>
-          <span>for new user's</span>
+        <div class="plan-title mover-plan">
+          <h3>{{deal.name}}</h3>
+          <span>{{deal.moveDuration}} hours</span>
         </div>
         <div class="plan-price">
-          <h3><span class="symbol">$</span>25</h3>
-          <h4>per month</h4>
+          <h3><span class="symbol">{{deal.price | currency}}</span></h3>
         </div>
         <div class="plan-list">
           <div class="divide">
@@ -65,16 +64,19 @@
             </div>
           </div>
           <ul class="item-list">
-              <li><strong>5GB</strong> Disk Space</li>
-              <li><strong>15</strong> Email Addresses</li>
-              <li><strong>5</strong> Domains </li>
-              <li><strong>50</strong> Subdomains</li>
-              <li><strong>Email</strong> Support</li>
+              <li>{{deal.ourThoughts}}</li>
+              <li ng-pluralize count="deal.reviews.length"
+                when="{'0': 'No Reviews',
+                  'one': '1 Review',
+                  'other': '{} Reviews'}">
+                {{deal.reviews.length}}
+              </li>
           </ul>
-          <button type="button" class="btn btn-success">Sign Up</button>
+          <button type="button" class="btn btn-success" ng-click="loadModal(deal)">
+            More Information
+          </button>
         </div>
       </div>
     </div>
-
   </div><!-- /.row -->
 </div><!-- /.container -->

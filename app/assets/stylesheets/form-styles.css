@@ -205,3 +205,22 @@ background-size: cover;
   opacity:1;
   line-height:20px;
 }
+
+.mover-plan {
+  height: 130px;
+}
+
+.item-list {
+  height: 200px;
+}
+
+.modal {
+  position: absolute;
+  outline: none;
+  overflow: visible;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  width: auto;
+  height: 90%;
+}
