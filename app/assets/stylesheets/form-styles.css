@@ -6,9 +6,17 @@
 body {
  font-family: 'Bitter', serif;
  background: #f5f5f5;
- background-image: url('/assets/bg.jpg');
+ background: url('/assets/truck.jpg') no-repeat center center fixed;
+ -moz-background-size: cover;
+
+-webkit-background-size: cover;
+
+-o-background-size: cover;
+
+background-size: cover;
  padding-bottom: 40px;
 }
+
 
 .pricing-tables-jumbotron {
 	text-align: center;
